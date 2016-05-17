@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden}.hidden{display:none}.top_line{background-color:#000}.top_line .logo{padding:18px 0}.top_line .top_menu{position:absolute;top:0;right:0;z-index:10}.top_menu ul{margin:0;padding:0;list-style-type:none}.top_menu li{display:inline-block}.top_menu li a{padding:18px 20px;display:block;color:#b0b0b0;font-size:15px;line-height:28px}.top_menu li a:focus,.top_menu li a:hover{color:#ff8b38;text-decoration:none;border-bottom:1px solid #ff8b38}.head{position:relative;padding-top:150px;background-position:center;background-size:cover}.head:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.3)}.head .top_form{width:360px;background-color:#FFF}.head .top_form .input_wrap{padding:16px 38px 0}.head .top_form h3{color:#333;margin:0;font-family:OpenSansBold,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:20px}.top_text h1,.top_text p{font-family:RalewayLight,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif}.head .top_form h3 span{color:#ff9b51}.head .top_form input{width:100%;border:none;margin-top:42px;padding:10px 5px;color:#000;border-bottom:#d6d6d6 solid 1px;outline:0}.head .top_form button{display:block;width:100%;border:none;background-color:#ff9b51;color:#fff;margin-top:42px;padding:20px 0}.down,.top_text{display:inline-block;color:#fff}.head .top_form button:hover{background-color:#ff8b38}.top_text{margin-bottom:155px}.top_text img{width:175px;height:60px}.top_text h1{color:#fff;font-size:35px;line-height:40px}.top_text .top_line{height:2px;width:75px;background-color:#FFF;margin-bottom:35px}.top_text p{opacity:.7;font-size:17px}.down{background-color:transparent;border:2px solid #fff;padding:10px 30px;margin-top:40px;-webkit-transition:all .7s;transition:all .7s}.down:hover{background-color:#FFF;color:#000;text-decoration:none}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="top_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="logo">
+							<a href="#"><img src="img/Logo.png" alt="logo"></a>
+						</div>
+						<div class="top_menu">
+							<a href="#menu" id="toggle"><span></span></a>
+
+							<div id="menu">
+								<ul>
+									<li><a href="#home">Features</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#contact">Pricing</a></li>
+									<li><a href="#contact">Reviews</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head" style="background-image: url(img/header.jpg); ">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="top_text">
+							<img src="img/top_img.png" alt="Axit">
+							<h1>MODERN AXURE TEMPLATE
+								FOR BEAUTIFUL PROTOTYPES</h1>
+								<div class="top_line"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+									euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+									accumsan et viverra justo commodo.</p>
+									<a href="#" class="down">Download</a>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-4">
+								<form class="top_form">
+									<div class="input_wrap">
+										<h3>Try Your <span>FREE</span> Trial Today</h3>
+										<input type="text" placeholder="Name" required>
+										<input type="email" placeholder="Email" required>
+										<input type="password" placeholder="Password" required>
+									</div>
+									<button>Get Started</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h4>Social Media</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, assumenda vel vitae magnam corporis?</p>
+						</div>	
+						<div class="col-md-8">
+
+							<ul class="social_wrap">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<section class="sect_1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="row">
+								<div class="col-sm-3">
+									<a href="#" class="nav-tabs-dropdown">Tabs</a>
+									<ul id="nav-tabs-wrapper" class="nav nav-stacked">
+										<li class="active ve"><a class="tabb " href="#vtab1" data-toggle="tab">Tab 1</a></li>
+										<li><a class="tabb" href="#vtab2" data-toggle="tab">Tab 2</a></li>
+										<li><a class="tabb" href="#vtab3" data-toggle="tab">Tab 3</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-9">
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+											<h3>Tabs with soft transitioning effect.</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ratione recusandae, voluptate rem tenetur excepturi maiores odio ut nihil, minima debitis quia aliquid alias magni temporibus doloremque iste eveniet blanditiis!</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem.</p>
+											<a href="#" class="down">Download</a>
+										</div>
+										<div role="tabpanel" class="tab-pane fade" id="vtab2">
+											<h3>Tab 2</h3>
+											<p> Mauris imperdiet dignissim ante, in efficitur mauris elementum sed. Cras vulputate malesuada magna. Morbi tincidunt eros a dui cursus, vitae dignissim nulla scelerisque. Duis pharetra scelerisque mi vel luctus. Cras eu purus efficitur, blandit nisi id, fringilla nulla.</p>
+										</div>
+										<div role="tabpanel" class="tab-pane fade in" id="vtab3">
+											<h3>Tab 3</h3>
+											<p>Etiam id pharetra quam. Morbi tristique nunc vel sapien dapibus, sit amet imperdiet quam venenatis. Vestibulum et suscipit urna. Suspendisse volutpat quis est eu volutpat. Nulla non tortor venenatis turpis congue aliquet. Vivamus at elit vel massa elementum tempor sit amet sed odio. Nullam placerat, arcu sed ullamcorper ornare, erat erat placerat quam, in feugiat nulla purus in nunc. Maecenas vitae erat auctor, aliquam tellus et, vulputate eros.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-4 sity_img">
+							<img src="img/sity.png" alt="sity">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect_2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							
+							<div class="sect_2_img">
+								<img src="img/sect_2.png" alt="mysity">
+							</div>
+						</div>
+						<div class="col-sm-1"></div>
+						<div class="col-sm-5">
+							
+							<div class="sect_2_text">
+								<h3>Sub list section</h3>
+								<div class="line"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ullam! Deleniti quas alias corporis commodi, dicta esse porro nihil, suscipit omnis corrupti nam animi odit dolorem perspiciatis doloremque accusamus autem.</p>
+								<div class="sect2_wrap">
+									<div class="s2_item">
+										<div class="s2_img">
+											<img src="img/s2_1.png" alt="alt">
+										</div>
+										<div class="s2_text">
+											<h4>Title</h4>
+											<p>Ducimus ex praesentium magni assumenda maxime ipsam eius dolore, laborum nam, beatae iusto debitis natus consequuntur.</p>
+										</div>
+									</div>
+
+									<div class="s2_item">
+										<div class="s2_img">
+											<img src="img/s2_2.png" alt="alt">
+										</div>
+										<div class="s2_text">
+											<h4>Title</h4>
+											<p>Ducimus ex praesentium magni assumenda maxime ipsam eius dolore, laborum nam, beatae iusto debitis natus consequuntur.</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+						</div>
+					</div>
+				</div>
+			</section>	
+
+			<section class="sect_3">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="sect_2_text">
+								<h3>Standard Picture Section</h3>
+								<div class="line"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit quae sed, provident deserunt ipsa sapiente, consectetur libero veniam sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur animi esse laboriosam repellat asperiores repellendus perspiciatis sit explicabo ab quod impedit sapiente corrupti, dolorum! Magni recusandae aliquam temporibus animi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur animi esse laboriosam repellat asperiores repellendus perspiciatis sit explicabo ab quod impedit sapiente corrupti, dolorum! Magni recusandae aliquam temporibus animi.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="sect_2_img">
+								<img src="img/sect_3.png" alt="mysity">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect_4">
+				<div class="container">
+					<div class="row">
+						<h2>WHY THIS IS AWESOME</h2>
+						<div class="line"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="s4_wrap">
+							<div class="col-md-4">
+								<div class="s4_item">
+									<img src="img/sect_4_1.png" alt="">
+									<h3>Thoughtful Design</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+										elit. Aenean euismod bibendum laoreet. Proin gravida 
+										dolor sit amet lacus accumsan et viverra.</p>
+									</div>	
+								</div>
+								<div class="col-md-4">
+									<div class="s4_item">
+										<img src="img/sect_4_2.png" alt="">
+										<h3>Thoughtful Design</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+											elit. Aenean euismod bibendum laoreet. Proin gravida 
+											dolor sit amet lacus accumsan et viverra.</p>
+										</div>	
+									</div>
+									<div class="col-md-4">
+										<div class="s4_item">
+											<img src="img/sect_4_3.png" alt="">
+											<h3>Thoughtful Design</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+												elit. Aenean euismod bibendum laoreet. Proin gravida 
+												dolor sit amet lacus accumsan et viverra.</p>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>	
+						</section>	
+
+						<section class="sect_5">
+							<div class="container">
+								<div class="row">
+									<h2>PRICING OPTIONS</h2>
+									<div class="line"></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<div class="sect5_wrap">
+										<div class="sec5_item">
+											<div class="basic">
+												<div class="basic_top">
+													<div class="basic_t1">
+														<p>Basic</p>
+													</div>
+													<div class="basic_t2">
+														<span>$<strong>0</strong></span>
+														<p>Free for Life</p>
+													</div>
+												</div>
+												<div class="sect5_bottom">
+													<p>1 gb of space</p>
+													<p>10 gb of bandwidth</p>
+													<p>3 websites</p>
+													<p>Basic Customization</p>
+													<p>wordpress integration</p>
+													<p>email support</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="sec5_item">
+											<div class="basic">
+												<div class="basic_top">
+													<div class="basic_t1">
+														<p>Professional</p>
+													</div>
+													<div class="basic_t2 proff">
+														<span>$<strong>19</strong></span>
+														<p>Monthly Payment</p>
+													</div>
+												</div>
+												<div class="sect5_popular">
+													<p>OUR MOST POPULAR</p>
+												</div>
+												<div class="sect5_bottom">
+													<p>5 gb of space</p>
+													<p>50 gb of bandwidth</p>
+													<p>12 websites</p>
+													<p>Advanced Customization</p>
+													<p>wordpress integration</p>
+													<p>email support</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="sec5_item">
+											<div class="basic">
+												<div class="basic_top">
+													<div class="basic_t1">
+														<p>Enterprise</p>
+													</div>
+													<div class="basic_t2">
+														<span>$<strong>70</strong></span>
+														<p>Monthly Payment</p>
+													</div>
+												</div>
+												<div class="sect5_bottom">
+													<p>Unlimited space</p>
+													<p>unlimited bandwidth</p>
+													<p>100 websites</p>
+													<p>Advanced Customization</p>
+													<p>wordpress integration</p>
+													<p>24/7 customer support</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="sect_4 sect_6 ">
+							<div class="container">
+								<div class="row">
+									<h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+									<div class="line"></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<div class="sect_6_wrap">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="sect6_item">
+													<div class="sect6_text">
+														<p>Lorem ipsum dolor sit amet, 
+															consectetur adipisicing elit. Doloribus 
+															accusamus expedita repellat similique 
+															odio aspernatur ex, architecto eaque 
+															quo suscipit.</p>
+															<div class="tringle"></div>
+														</div>
+														<div class="sect6_img">
+															<img src="img/sect_6.png" alt="alt">
+															<div class="sect6_name">
+																<strong>Jeremy H.</strong>
+																<p>Manager</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-4">
+													<div class="sect6_item">
+														<div class="sect6_text">
+															<p>Lorem ipsum dolor sit amet, 
+																consectetur adipisicing elit. Doloribus 
+																accusamus expedita repellat similique 
+																odio aspernatur ex, architecto eaque 
+																quo suscipit.</p>
+																<div class="tringle"></div>
+															</div>
+															<div class="sect6_img">
+																<img src="img/sect_6.png" alt="alt">
+																<div class="sect6_name">
+																	<strong>John S.</strong>
+																	<p>Freelancer</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-sm-4">
+														<div class="sect6_item">
+															<div class="sect6_text">
+																<p>Lorem ipsum dolor sit amet, 
+																	consectetur adipisicing elit. Doloribus 
+																	accusamus expedita repellat similique 
+																	odio aspernatur ex, architecto eaque 
+																	quo suscipit.</p>
+																	<div class="tringle"></div>
+																</div>
+																<div class="sect6_img">
+																	<img src="img/sect_6.png" alt="alt">
+																	<div class="sect6_name">
+																		<strong>Susan W.</strong>
+																		<p>Photographer</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</section>
+
+									<section class="sect7 goll">
+
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+													<div class="line"></div>
+													<p>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+													<a href="#" class="down">Download</a>
+												</div>
+											</div>
+										</div>
+									</section>
+
+									<section class="sect8 goll">
+										<div class="container">
+											<div class="row">
+												<h2>CONTACT US</h2>
+												<div class="line"></div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<form class="bottomForm">
+
+													<div class="col-sm-6">
+														<input type="text" placeholder="Name" required>
+														<input type="email" placeholder="Email" required>
+														<input type="text" placeholder="Subject" required>
+
+													</div>
+													<div class="col-sm-6">
+														<textarea name="message" placeholder="Message"></textarea>
+													</div>
+													<div class="sendMessage">
+														<button type="submit">Send Message</button>
+													</div>
+
+												</form>
+												
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<footer>
+									<div class="container">
+										<div class="row">
+											<div class="co-md-12">
+												<ul class="social_wrap">
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+													<li><a href="#"></a></li>
+												</ul>
+											</div>
+
+											<div class="col-md-12">
+												<p>&copy; 2015 Axure Themes</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</footer>
+
+
+
+							<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
