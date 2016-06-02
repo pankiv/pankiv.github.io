@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/jquery.datetimepicker.min.css">
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<p><strong>Hot News! </strong>Lorem ipsum dolor set ament</p>
+					</div>
+					<div class="col-sm-6 right">
+						<div class="tel">
+							<i class="fa fa-mobile" aria-hidden="true"></i>+3(068) 33-62-309
+							<a href="#">register</a>
+							<a class="active" href="#">Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Home</a><span></span></li>
+						<li><a href="#">Services</a><span></span></li>
+						<li><a href="#">About</a><span></span></li>
+						<li><a href="#">Blog</a><span></span></li>
+						<li><a href="#">pages</a><span></span></li>
+						<button type="button">Make Appointment</button>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="top_img" style="background-image: url(img/top_img.jpg)";>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="top_text">
+							<p class="blue">We provide</p>
+							<strong>Medical Services</strong>	
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim aliquam quaerat voluptatem.</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="appointment">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 app_pad">
+					<div class="row">
+						<div class="col-sm-4 app_item">
+							<a href="#">
+								<img src="img/app1.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+
+						<div class="col-sm-4 app_item">
+							<a class="active" href="#">
+								<img src="img/app2.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+
+						<div class="col-sm-4 app_item">
+							<a href="#">
+								<img src="img/app3.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+
+						<div class="col-sm-4 app_item">
+							<a href="#">
+								<img src="img/app4.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+						
+						<div class="col-sm-4 app_item">
+							<a href="#">
+								<img src="img/app5.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+
+						<div class="col-sm-4 app_item">
+							<a href="#">
+								<img src="img/app6.png" alt="app">
+								<span class="line"></span>
+								<p>Medicine &copy; Drug Store</p>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<form class="top_form">
+						<h3>Make An Appointment</h3>
+						<p>Fill form &copy; Send me</p>
+						<div class="form-group">
+							<select class="form-control" id="select">
+								<option>Select your country</option>
+								<option>Ukrane</option>
+								<option>Italy</option>
+								<option>Gernamy</option>
+								<option>USA</option>
+							</select>
+							<select class="form-control" id="select">
+								<option>Choose Services</option>
+								<option>Ukrane</option>
+								<option>Italy</option>
+								<option>Gernamy</option>
+								<option>USA</option>
+							</select>
+							<select class="form-control" id="select">
+								<option>Select Doctor</option>
+								<option>Doctor 1</option>
+								<option>Doctor 2</option>
+								<option>Doctor 3</option>
+								<option>Doctor 4</option>
+							</select>
+							<select class="form-control" id="select">
+								<option>Select Doctor</option>
+								<option>Doctor 1</option>
+								<option>Doctor 2</option>
+								<option>Doctor 3</option>
+								<option>Doctor 4</option>
+							</select>
+							<div class="form-group">
+								<input id="datetimepicker" type="text" class="form-control" placeholder="Chose date...">
+							</div>
+							<p class="small">All Fields With an Are Required ***</p>
+							<button type="button">Submit You Requirements</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="health bgc">
+		<div class="wrapper">
+			<h4><span>Health </span>Care Projects</h4>
+			<div class="line"></div>
+
+
+
+
+
+			<div class="controls">
+
+				<button class="filter" data-filter="all">All</button>
+				<button class="filter" data-filter=".category-1">Projects</button>
+				<button class="filter" data-filter=".category-2">Healthcare</button>
+				<button class="filter" data-filter=".category-3">operations</button>
+				<button class="filter" data-filter=".category-4">Drugs Soltions</button>
+
+
+			</div>
+			<div id="Container" class="mix_container">
+				<div class="mix category-1">
+					<img src="img/mix.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-2">
+					<img src="img/mix1.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-3">
+					<img src="img/mix2.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-4">
+					<img src="img/mix3.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-1">
+					<img src="img/mix4.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-2">
+					<img src="img/mix5.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-3">
+					<img src="img/mix6.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-4">
+					<img src="img/mix7.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-4">
+					<img src="img/mix8.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="mix category-1">
+					<img src="img/mix9.jpg" alt="">
+					<a href="#" class="mix_hover">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+						<p>Pet health care</p>
+						<span class="line"></span>
+						<p class="little">48 Projects Done</p>
+					</a>
+				</div>
+
+				<div class="gap"></div>
+				<div class="gap"></div>
+			</div>
+			<div class="all">
+				<a href="#">all project</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="intro">
+		<div class="container_timeline">
+		</div>
+	</section>
+
+	<section class="timeline health">
+		<ul>
+			<li>
+				<div>
+					<time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="news_video">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4><span>Health </span>Care Projects</h4>
+					<div class="row v_item">
+						<div class="col-sm-5">
+							<img src="img/Layer-60.jpg" alt="60">
+						</div>
+						<div class="col-sm-7">
+							<h5>Medical Test Checkup</h5>
+							<div class="line"></div>
+							<p>Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar. Vestibulum bib volutpat accumsan non laoreet...</p>
+						</div>
+					</div>
+					<div class="row v_item">
+						<div class="col-sm-5">
+							<img src="img/Layer-60.jpg" alt="60">
+						</div>
+						<div class="col-sm-7">
+							<h5>Medical Test Checkup</h5>
+							<div class="line"></div>
+							<p>Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar. Vestibulum bib volutpat accumsan non laoreet...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h4><span>Video </span>Introduction</h4>
+					<div class="youtube">
+						<iframe width="100%" height="350px" src="https://www.youtube.com/embed/DzyEBDI48KQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="partner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 middle">
+					<img src="img/partner1.png" alt="partner">
+				</div>
+				<div class="col-md-3 col-sm-6 middle">
+					<img src="img/partner2.png" alt="partner">
+				</div>
+				<div class="col-md-3 col-sm-6 middle">
+					<img src="img/partner3.png" alt="partner">
+				</div>
+				<div class="col-md-3 col-sm-6 middle">
+					<img src="img/partner4.png" alt="partner">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="myfoot">
+		<div class="container pos_rell">
+			<div class="toTop">
+				<a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-xs-6 foot_item">
+					<div class="foot_logo">
+						<img src="img/foot1.png" alt="brand">
+					</div>
+					<p>This is Photoshop's vesion  of Lorem um. sProin gravida nibh vel ivelit aur aliquet. Aenean sollici his a great justo. </p>
+					<div class="foot_sing">
+						<img src="img/foot2.png" alt="sing">
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-6 foot_item">
+					<h5><span>quick </span>links</h5>
+					<ul class="links">
+						<li><a href="#">Healthcare Programe</a></li>
+						<li><a href="#">Family Treatment</a></li>
+						<li><a href="#">Medical Injuries</a></li>
+						<li><a href="#">Personal Doctor</a></li>
+						<li><a href="#">Operations</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-xs-6 foot_item">
+					<h5><span>contact </span>us</h5>
+					<div class="location">
+						<p><i class="fa fa-map-marker" aria-hidden="true"></i>1600 Elizabeth St, Melbourne, Victo</p>
+						<p><i class="fa fa-envelope-o" aria-hidden="true"></i>contact@domain.com</p>
+						<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i>( +99 ) 22-44-22-222</p>
+						<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i>( +98 ) 88-11-22-888</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-6 foot_item working">
+					<h5><span>working </span>hours</h5>
+					<ul class="week">
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+						<li>Monday --------- 9:00 am  -  8:00 pm </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="down">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="foot_text">
+							<p>UiFuse.com &copy; 2016, All Rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<ul class="foot_menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
